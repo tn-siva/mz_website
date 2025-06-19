@@ -18,8 +18,8 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <div className="text-2xl font-bold text-red-600">MEDZOOM</div>
               <nav className="hidden md:flex space-x-8">
-                <a href="#about" className="text-gray-700 hover:text-red-600 transition-colors">About</a>
-                <a href="#research" className="text-gray-700 hover:text-red-600 transition-colors">Research</a>
+                <a href="/" className="text-gray-700 hover:text-red-600 transition-colors">Home</a>
+                <a href="/research" className="text-gray-700 hover:text-red-600 transition-colors">Research</a>
                 <a href="#contact" className="text-gray-700 hover:text-red-600 transition-colors">Contact</a>
               </nav>
             </div>
