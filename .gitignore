@@ -34,4 +34,4 @@ yarn-error.log*
 next-env.d.ts
 
 # files
-/public/archive
+/public/images/archive
