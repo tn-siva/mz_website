@@ -16,11 +16,11 @@ export default function Home() {
         <header className="bg-white shadow-sm">
           <div className="container mx-auto px-4 py-6">
             <div className="flex justify-between items-center">
-              <div className="text-2xl font-bold text-red-600">MEDZOOM</div>
+              <div className="text-2xl font-bold text-red-700">MEDZOOM</div>
               <nav className="hidden md:flex space-x-8">
-                <a href="/" className="text-gray-700 hover:text-red-600 transition-colors">Home</a>
-                <a href="/research" className="text-gray-700 hover:text-red-600 transition-colors">Research</a>
-                <a href="#contact" className="text-gray-700 hover:text-red-600 transition-colors">Contact</a>
+                <a href="/" className="text-gray-700 hover:text-red-700 transition-colors">Home</a>
+                <a href="/research" className="text-gray-700 hover:text-red-700 transition-colors">Research</a>
+                <a href="#contact" className="text-gray-700 hover:text-red-700 transition-colors">Contact</a>
               </nav>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 ABOUT US
-                <div className="w-12 h-1 bg-red-600 mt-2"></div>
+                <div className="w-12 h-1 bg-red-700 mt-2"></div>
               </h2>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
                 We are a healthcare company licensed to provide unique, 
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
 
             {/* Center Logo Section */}
-            <div className="bg-red-600 p-8 rounded-lg shadow-lg text-center text-white flex flex-col justify-center">
+            <div className="bg-red-700 p-8 rounded-lg shadow-lg text-center text-white flex flex-col justify-center">
               <div className="mb-6">
                 <h1 className="text-3xl font-bold mb-2">MEDZOOM</h1>
                 <div className="text-lg mb-2">Cancer & Anti-Ageing</div>
@@ -108,8 +108,8 @@ export default function Home() {
 
             {/* Bottom Logo */}
             <div className="bg-gray-100 p-8 rounded-lg shadow-lg text-center">
-              <div className="text-2xl font-bold text-red-600 mb-2">MEDZOOM</div>
-              <div className="text-lg font-bold text-red-600">HEALTH</div>
+              <div className="text-2xl font-bold text-red-700 mb-2">MEDZOOM</div>
+              <div className="text-lg font-bold text-red-700">HEALTH</div>
               <div className="text-sm text-gray-600 mt-2">HEALTH EQUITY, FOREVER.</div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="bg-gray-100 p-8 rounded-lg shadow-lg">
               <h2 className="text-xl font-bold text-gray-800 mb-4">
                 MEDZOOM HEALTH AIMS TO PROVIDE THERAPY GUIDANCE TAILORED PRECISELY TO THE PATIENT
-                <div className="w-12 h-1 bg-red-600 mt-2"></div>
+                <div className="w-12 h-1 bg-red-700 mt-2"></div>
               </h2>
               
               <div className="mt-8">
@@ -161,7 +161,7 @@ export default function Home() {
               <div className="mt-8 bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-lg font-bold text-gray-800 mb-4">
                   MISSION
-                  <div className="w-12 h-1 bg-red-600 mt-2"></div>
+                  <div className="w-12 h-1 bg-red-700 mt-2"></div>
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   Our main objective is to assist the clinician and the cancer 
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
 
             {/* Vision, Activities, Faculty */}
-            <div className="bg-red-600 p-8 rounded-lg shadow-lg text-white">
+            <div className="bg-red-700 p-8 rounded-lg shadow-lg text-white">
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4">
                   VISION
@@ -226,7 +226,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="bg-gray-800 text-white py-8 mt-16">
           <div className="container mx-auto px-4 text-center">
-            <div className="text-2xl font-bold text-red-600 mb-4">MEDZOOM</div>
+            <div className="text-2xl font-bold text-red-700 mb-4">MEDZOOM</div>
             <p className="text-gray-300">Cancer & Anti-Ageing Research Institute</p>
             <p className="text-gray-400 mt-2">www.medzoom.co.uk</p>
           </div>
