@@ -18,8 +18,9 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <div className="text-2xl font-bold text-red-700">MEDZOOM</div>
               <nav className="hidden md:flex space-x-8">
-                <a href="/" className="text-gray-700 hover:text-red-700 transition-colors">Home</a>
+                <a href="/" className="text-red-700 font-semibold">Home</a>
                 <a href="/research" className="text-gray-700 hover:text-red-700 transition-colors">Research</a>
+                <a href="/what-drives-us" className="text-gray-700 hover:text-red-700 transition-colors">What Drives Us</a>
                 <a href="#contact" className="text-gray-700 hover:text-red-700 transition-colors">Contact</a>
               </nav>
             </div>
@@ -28,196 +29,145 @@ export default function Home() {
 
         {/* Main Content Grid */}
         <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            
-            {/* About Us Section */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">
-                ABOUT US
-                <div className="w-12 h-1 bg-red-700 mt-2"></div>
-              </h2>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                We are a healthcare company licensed to provide unique, 
-                effective and robust technology services in Precision medicine 
-                with greater consideration towards affordability of common masses. 
-                We are committed to accelerate precision medicine into medical 
-                practice in both Indian and international markets. We believe 
-                to educate the young minds in the center of precision medicine 
-                and drug discovery to enable the humankind to battle the cancer 
-                menace and ageing diseases.
-              </p>
-              
-              <div className="mt-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  RESEARCH
-                  <br />EDUCATE
-                  <br />SERVE
-                </h3>
-              </div>
+          {/* Apply background image to the whole grid */}
+          <div className="relative rounded-lg shadow-lg overflow-hidden max-w-7xl mx-auto">
+            <div className="absolute inset-0 z-0">
+              <Image
+                src="/images/background_img_1.jpg"
+                alt="Background"
+                fill
+                className="object-cover opacity-10"
+                priority
+              />
             </div>
-
-            {/* Center Logo Section */}
-            <div className="bg-red-700 p-8 rounded-lg shadow-lg text-center text-white flex flex-col justify-center">
-              <div className="mb-6">
-                <h1 className="text-3xl font-bold mb-2">MEDZOOM</h1>
-                <div className="text-lg mb-2">Cancer & Anti-Ageing</div>
-                <div className="text-lg mb-2">Research Institute</div>
-                <div className="text-sm border-t border-b border-white py-2 my-4">CAARI</div>
-              </div>
-            </div>
-
-            {/* Health Wealth Section */}
-            <div className="relative bg-black rounded-lg shadow-lg overflow-hidden">
-              <div className="absolute inset-0">
-                <Image
-                  src="/images/background_img_1.jpg"
-                  alt="Background"
-                  fill
-                  className="object-cover opacity-30"
-                />
-              </div>
-              <div className="relative z-10 p-8 h-full flex flex-col justify-center">
-                <h2 className="text-4xl font-bold text-white mb-4">
-                  HEALTH
-                  <br />WEALTH
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 items-stretch">
+              {/* About Us Section (row 1, col 1) */}
+              <div className="p-8 flex flex-col h-full row-span-1">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                  ABOUT US
+                  <div className="w-20 h-2 bg-red-700 mt-2"></div>
                 </h2>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  We are a healthcare company licensed to provide unique, 
+                  effective and robust technology services in Precision medicine 
+                  with greater consideration towards affordability of common masses. 
+                  We are committed to accelerate precision medicine into medical 
+                  practice in both Indian and international markets. We believe 
+                  to educate the young minds in the center of precision medicine 
+                  and drug discovery to enable the humankind to battle the cancer 
+                  menace and ageing diseases.
+                </p>
               </div>
-            </div>
 
-            {/* Contact Section */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">CONTACT US</h3>
-              <p className="text-gray-500 text-sm">www.medzoom.co.uk</p>
-            </div>
-
-            {/* Technology Description */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <p className="text-gray-600 text-sm leading-relaxed">
-                MedZoom Health has developed, owns, and utilizes proprietary 
-                technology and methodologies to match virtually every individual 
-                cancer patient with the most potentially beneficial treatments 
-                and drug combinations that are optimally suited for each patient's 
-                successful treatment outcome. Such methodologies can also be used 
-                to prioritize drugs and drug combinations of unknown clinical 
-                benefit for a range of malignancies. As a result, they are 
-                invaluable for helping pharmaceutical companies optimize their 
-                developmental compound pipelines. In addition, CAARI has a 
-                dedicated research wing for drug discovery.
-              </p>
-            </div>
-
-            {/* Bottom Logo */}
-            <div className="bg-gray-100 p-8 rounded-lg shadow-lg text-center">
-              <div className="text-2xl font-bold text-red-700 mb-2">MEDZOOM</div>
-              <div className="text-lg font-bold text-red-700">HEALTH</div>
-              <div className="text-sm text-gray-600 mt-2">HEALTH EQUITY, FOREVER.</div>
-            </div>
-          </div>
-
-          {/* Second Page Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-12">
-            
-            {/* Aims Section */}
-            <div className="bg-gray-100 p-8 rounded-lg shadow-lg">
-              <h2 className="text-xl font-bold text-gray-800 mb-4">
-                MEDZOOM HEALTH AIMS TO PROVIDE THERAPY GUIDANCE TAILORED PRECISELY TO THE PATIENT
-                <div className="w-12 h-1 bg-red-700 mt-2"></div>
-              </h2>
-              
-              <div className="mt-8">
-                <div className="relative">
-                  <Image
-                    src="/images/molecular_network.jpg"
-                    alt="Molecular Network Visualization"
-                    width={300}
-                    height={200}
-                    className="rounded-lg"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Medicine Evolution */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Current Medicine</h3>
-                <p className="text-sm text-gray-600 mb-4">One Treatment Fits All</p>
-                <div className="relative mb-8">
-                  <Image
-                    src="/images/current_future_flowchart.jpg"
-                    alt="Current vs Future Medicine Flowchart"
-                    width={300}
-                    height={150}
-                    className="rounded-lg"
-                  />
+              {/* Center Logo Section (row 1, col 2) */}
+              <div className="flex flex-col justify-center items-center h-full row-span-1">
+                <div className="flex-col">
+                  <div className="bg-white flex-col items-center pt-2 w-auto">
+                    <div className="bg-red-700 text-white text-2xl font-bold flex items-center justify-center px-8 py-3 w-3/4 mx-auto">
+                      M E D Z O O M
+                    </div>
+                    <div className="text-gray-500 text-3xl font-bold flex items-center justify-center text-center px-8 py-1 w-auto">
+                      Cancer & Anti-Ageing Research Institute
+                    </div>
+                    <div className="relative w-3/4 h-1 bg-red-700 mx-auto rounded">
+                      {/* Left circle */}
+                      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full border-4 border-red-700 bg-white"></div>
+                      {/* Right circle */}
+                      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full border-4 border-red-700 bg-white"></div>
+                    </div>
+                    <div className="text-gray-500 text-3xl flex items-center justify-center px-8 py-1 font-semibold w-auto">
+                      CAARI
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Future Medicine</h3>
-                <p className="text-sm text-gray-600">More Personalized Diagnostics</p>
+              {/* Health Wealth Section - spans 2 rows (col 3, row 1-2) */}
+              <div className="relative shadow-lg overflow-hidden row-span-2 flex flex-col">
+                {/* Mild black overlay */}
+                <div className="absolute inset-0 bg-black opacity-70 z-0 pointer-events-none" />
+                <div className="relative z-10 p-8 h-full flex flex-col justify-center">
+                  <span className="w-56 h-4 bg-white m-4 block rounded"></span>
+                  <h2 className="text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                    HEALTH
+                    <br />WEALTH
+                  </h2>
+                  <span className="w-56 h-4 bg-white mb-4 ml-4 block rounded"></span>
+                </div>
+                {/* Red bar below the card (not affected by overlay) */}
+                <div className="w-full h-3 bg-red-700 relative z-20" />
               </div>
 
-              <div className="mt-8 bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-bold text-gray-800 mb-4">
-                  MISSION
-                  <div className="w-12 h-1 bg-red-700 mt-2"></div>
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Our main objective is to assist the clinician and the cancer 
-                  patient by providing predicted therapy guidance by performing 
-                  patient derived advanced 3D cell models based on live tissue 
-                  sensitivity analysis at the patient specific level.
-                </p>
-                <p className="text-sm text-gray-600 leading-relaxed mt-4">
-                  Our parallel objective is to identify and validate new drug 
-                  candidate(s) to fight cancer.
-                </p>
-              </div>
-            </div>
+              {/* RESEARCH / EDUCATE / SERVE + CONTACT Section as a single card with blue stripes (row 2, col 1-2) */}
+              <div className="col-span-1 lg:col-span-2 flex flex-col h-full row-span-1">
+                <div className="relative bg-white shadow-lg flex flex-col lg:flex-row overflow-hidden h-full">
+                  {/* Top blue stripe */}
+                  <div className="absolute top-0 left-0 w-full h-1 bg-sky-400 my-2" />
+                  {/* Bottom blue stripe */}
+                  <div className="absolute bottom-0 left-0 w-full h-1 bg-sky-400 my-2" />
 
-            {/* Vision, Activities, Faculty */}
-            <div className="bg-red-700 p-8 rounded-lg shadow-lg text-white">
-              <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  VISION
-                  <div className="w-12 h-1 bg-white mt-2"></div>
-                </h3>
-                <p className="text-sm leading-relaxed">
-                  Our vision is to help humankind win the battle of cancer by 
-                  using breakthrough analytical techniques to walk the 
-                  patient-centric, cancer diagnostics and drug discovery path 
-                  leading from drug discovery level to identify new targets and 
-                  associated therapies so that the benefits of personalized 
-                  cancer treatment can be extended to millions of patients who 
-                  are currently unable to take advantage of it.
-                </p>
+                  <div className="flex-1 p-8 flex flex-col justify-center">
+                    <h3 className="text-5xl font-bold text-gray-500 mb-4 ml-16">
+                      RESEARCH
+                      <br />EDUCATE
+                      <br />SERVE
+                    </h3>
+                  </div>
+                  <div className="flex-1 p-8 flex flex-col justify-center text-center">
+                    <h3 className="text-3xl font-bold text-gray-500 mb-4">CONTACT US</h3>
+                    <p className="text-gray-500 text-lg">www.medzoom.co.uk</p>
+                  </div>
+                </div>
               </div>
 
-              <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">
-                  ACTIVITIES
-                  <div className="w-12 h-1 bg-white mt-2"></div>
-                </h3>
-                <ul className="text-sm space-y-1">
-                  <li>Education</li>
-                  <li>Research</li>
-                  <li>Services</li>
-                  <li>Devices</li>
-                  <li>Pharma</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold mb-4">
-                  FACULTY
-                  <div className="w-12 h-1 bg-white mt-2"></div>
-                </h3>
-                <ul className="text-sm space-y-1">
-                  <li>Internationally qualified researchers</li>
-                  <li>Experienced professionals</li>
-                  <li>Sharp young talents</li>
-                </ul>
+              {/* Row 3: Merged Card with Common Background */}
+              <div className="lg:col-span-3 relative rounded-lg shadow-lg overflow-hidden min-h-[260px]">
+                {/* Common background image for the entire card */}
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src="/images/background_img_1.jpg"
+                    alt="Background"
+                    fill
+                    className="object-cover opacity-10"
+                    priority
+                  />
+                </div>
+                {/* Content overlay with grid to match column widths */}
+                <div className="relative z-10 w-full h-full grid grid-cols-1 lg:grid-cols-3">
+                  {/* Technology Description (left/first section) */}
+                  <div className="p-8 flex flex-col justify-center">
+                    <p className="text-gray-800 text-sm leading-relaxed">
+                      MedZoom Health has developed, owns, and utilizes proprietary 
+                      technology and methodologies to match virtually every individual 
+                      cancer patient with the most potentially beneficial treatments 
+                      and drug combinations based on individual treatment outcome.
+                      Such methodologies can also be used 
+                      to prioritize drugs and drug combinations of unknown clinical 
+                      benefit for a range of malignancies. As a result, they are 
+                      invaluable in helping pharmaceutical companies optimize their 
+                      developmental compound pipelines. In addition, CAARI has a 
+                      dedicated research wing for drug discovery.
+                    </p>
+                  </div>
+                  {/* MEDZOOM + HEALTH Rectangle (center, partial width, row 3 col 2) */}
+                  <div className="flex flex-col justify-center items-center px-4 py-8 h-full">
+                    <div className="bg-white flex-col items-center w-3/4 p-4">
+                      <div className="w-auto border-4 border-red-700 overflow-hidden">
+                        <div className="bg-red-700 text-white text-2xl font-bold flex items-center justify-center py-4">
+                          M E D Z O O M
+                        </div>
+                        <div className="bg-white text-red-700 text-2xl font-bold flex items-center justify-center py-4">
+                          HEALTH
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Bottom Logo (right/last section) */}
+                  <div className="p-8 flex flex-col justify-center items-center text-center">
+                    <div className="text-4xl font-bold text-gray-700 mb-2">MEDZOOM</div>
+                    <div className="text-m text-red-700 font-bold mt-2">HEALTH EQUITY, FOREVER.</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

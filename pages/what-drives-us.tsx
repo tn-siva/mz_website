@@ -2,12 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Research() {
+export default function WhatDrivesUs() {
   return (
     <>
       <Head>
-        <title>Research - MedZoom CAARI</title>
-        <meta name="description" content="CAARI Research & Innovation - Education, Devices, Services, and Contract Research" />
+        <title>What Drives MedZoom</title>
+        <meta name="description" content="MedZoom Purpose - Vision, Mission, Activities and Faculty" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -20,8 +20,8 @@ export default function Research() {
               <Link href="/" className="text-2xl font-bold text-red-700">MEDZOOM</Link>
               <nav className="hidden md:flex space-x-8">
                 <Link href="/" className="text-gray-700 hover:text-red-700 transition-colors">Home</Link>
-                <Link href="/research" className="text-red-700 font-semibold">Research</Link>
-                <Link href="/what-drives-us" className="text-gray-700 hover:text-red-700 transition-colors">What Drives Us</Link>
+                <Link href="/research" className="text-gray-700 hover:text-red-700 transition-colors">Research</Link>
+                <Link href="/what-drives-us" className="text-red-700 font-semibold">What Drives Us</Link>
                 <a href="#contact" className="text-gray-700 hover:text-red-700 transition-colors">Contact</a>
               </nav>
             </div>
@@ -36,15 +36,15 @@ export default function Research() {
               {/* Mission Statement */}
               <h2 className="text-4xl lg:text-4xl font-extrabold text-gray-800 m-6 mb-4 leading-tight flex-1 flex flex-col items-start justify-center">
                 <span>
-                  AT CAARI, WE UPSKILL MINDS TO THINK CRITICALLY AND ACT WITH COMPASSION
+                    MEDZOOM HEALTH AIMS TO PROVIDE THERAPY GUIDANCE TAILORED PRECISELY TO THE PATIENT
                 </span>
                 <span className="w-16 h-2 bg-red-700 mt-6 block rounded"></span>
               </h2>
-              {/* Laboratory Image */}
+              {/* Executive touching molecular network */}
               <div className="relative flex-1">
                 <Image
-                  src="/images/laboratory_researchers.jpg"
-                  alt="Researchers working in laboratory"
+                  src="/images/molecular_network.jpg"
+                  alt="An executive touching a molecular network"
                   fill
                   className="object-cover"
                 />
@@ -52,77 +52,65 @@ export default function Research() {
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-              {/* Classroom Image */}
+              {/* Current vs Future medicine chart */}
               <div className="relative flex-1">
                 <Image
-                  src="/images/classroom_scene.jpg"
-                  alt="Modern classroom with desks and blackboards"
+                  src="/images/current_future_flowchart.jpg"
+                  alt="Infographic showing current vs future medicine"
                   fill
-                  className="object-cover"
+                  className="object-cover min-h-[300px] max-h-[400px]"
                 />
               </div>
-              {/* Research & Innovation */}
+              {/* Mission */}
               <div className="relative text-center p-4 bg-gray-100 flex-1">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
                   RESEARCH & INNOVATION
                   <div className="w-16 h-2 bg-red-700 mt-6 block rounded"></div>
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed text-right">
-                  Cutting-edge research in the field of molecular oncology specifically
-                  addressing translational medicine and drug discovery at our state of art
-                  research facility located in Mumbai.
+                  Our main objective is to assist the clinician and the cancer patient by providing predictive
+                  therapy guidance based on patient specific 3D cell models built using ex vivo chemosensitivity assays.
+                  Our parallel objective is to identify and validate new drug candidate(s) to fight cancer.
                 </p>
               </div>
             </div>
 
-            {/* Education & Research Section */}
+            {/* Vision, Activities, Faculty section */}
             <div className="bg-red-700 p-8 rounded-lg shadow-lg text-white">
               <h3 className="text-2xl font-bold mb-4">
-                EDUCATION & RESEARCH
+                VISION
                 <div className="w-12 h-1 bg-white mt-2"></div>
               </h3>
               <div className="space-y-4 text-sm text-right mr-4">
                 <div>
-                  <p className="font-semibold">UG & PG courses</p>
-                  <p>CME programs</p>
-                  <p>Certifications</p>
+                  <p>Our vision is to help humankind win the battle against cancer by using state-of-the-art technologies
+                    in patient-centric cancer diagnostics and therapeutics. And in the drug discovery spcae, to identify
+                    new targets and associated therapies to extend the benefits of personalized treatments to millions of
+                    patients unable to access them now.
+                  </p>
                 </div>
               </div>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">
-                DEVICES
+                ACTIVITIES
                 <div className="w-12 h-1 bg-white mt-2"></div>
               </h3>
               <div className="space-y-2 text-sm text-right mr-4">
-                <p>Dialysis machines</p>
-                <p>Ventilators</p>
-                <p>Oxygen Ventilators</p>
-                <p>Emergency care systems</p>
+                <p>Education</p>
+                <p>Research</p>
+                <p>Devices</p>
+                <p>Pharma</p>
+                <p>AI Consulting</p>
               </div>
 
               <h3 className="text-2xl font-bold mb-4 mt-8">
-                SERVICES
+                FACULTY
                 <div className="w-12 h-1 bg-white mt-2"></div>
               </h3>
               <div className="space-y-2 text-sm text-right mr-4">
-                <p>Medical Diagnostics</p>
-                <p>Therapeutic</p>
-                <p>Cancer Vaccines</p>
-                <p>Cell Therapy</p>
-                <p>Precision Medicine</p>
-                <p>Validation</p>
-              </div>
-
-              <h3 className="text-2xl font-bold mb-4 mt-8">
-                CONTRACT RESEARCH
-                <div className="w-12 h-1 bg-white mt-2"></div>
-              </h3>
-              <div className="space-y-2 text-sm text-right mr-4">
-                <p>Drug discovery projects</p>
-                <p>Markers for diagnosis in Cancer & Anti-</p>
-                <p>ageing diseases</p>
-                <p>Candidate evaluation in oncology,</p>
-                <p>degenerative diseases & inflammation</p>
+                <p>Internationally qualified researchers</p>
+                <p>Experienced professionals</p>
+                <p>Shar young minds</p>
               </div>
             </div>
 
@@ -153,4 +141,3 @@ export default function Research() {
     </>
   )
 }
-
